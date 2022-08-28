@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<!-- <head>
+	<title>Chevron_groupe16</title>
+	
+</head> -->
+<body>
+	<h2>DRAW CHEVRON SHAPE</h2>
+	
+	<center>
+		<canvas id ="OurChevron" style="width: 800px; height: 400px;">
+
+		</canvas>
+		<script type="text/javascript">
+		
+			var chevron=document.getElementById("OurChevron");
+			var ctx=chevron.getContext("2d");
+			 
+			ctx.fillStyle= "blue";
+			ctx.strokeStyle="red";
+			ctx.beginPath();
+			ctx.moveTo(3,40);
+			ctx.lineTo(25,65);
+			ctx.lineTo(-58,151);
+			ctx.lineTo(-80,91)
+			ctx.lineTo(64,90);
+			ctx.lineTo(90,65);
+			ctx.lineTo(65,40);
+			ctx.lineTo(3,40);
+			ctx.closePath();
+			ctx.lineWidth=2;
+			ctx.fill();
+			ctx.stroke();
+			
+		</script>
+	</center>
+</body>
+
+	<style>
+		h2{
+			color:red;	
+		
+			left: 200px;
+			top: -37px;
+		}
+	</style>
+</html>
